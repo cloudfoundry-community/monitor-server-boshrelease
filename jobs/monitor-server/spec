@@ -1,0 +1,13 @@
+---
+name: monitor-server
+packages: []
+templates:
+  bin/monit_debugger: bin/monit_debugger
+  bin/monitor_server_ctl: bin/monitor_server_ctl
+  config/monitor_server.conf.erb: config/monitor_server.conf
+  data/properties.sh.erb: data/properties.sh
+  helpers/ctl_setup.sh: helpers/ctl_setup.sh
+  helpers/ctl_utils.sh: helpers/ctl_utils.sh
+properties:
+  monitor_server.leader_address:
+    description: Hostname/IP to the leader/master of the cluster
