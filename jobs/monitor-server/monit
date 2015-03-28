@@ -1,5 +1,5 @@
-check process monitor_server
-  with pidfile /var/vcap/sys/run/monitor_server/monitor_server.pid
-  start program "/var/vcap/jobs/monitor_server/bin/monit_debugger monitor_server_ctl '/var/vcap/jobs/monitor_server/bin/monitor_server_ctl start'"
-  stop program "/var/vcap/jobs/monitor_server/bin/monit_debugger monitor_server_ctl '/var/vcap/jobs/monitor_server/bin/monitor_server_ctl stop'"
-  group vcap
+check device ephemeral_disk with path /var/vcap/data
+  if SPACE usage > 80% then alert
+
+check device persistent_disk with path /var/vcap/store
+  if SPACE usage > 80% then alert

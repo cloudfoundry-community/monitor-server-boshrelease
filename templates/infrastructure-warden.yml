@@ -12,19 +12,11 @@ update:
   update_watch_time: 1000-30000
 
 jobs:
-  - name: monitor_server_leader_z1
+  - name: monitor_server_z1
     instances: 1
     networks:
       - name: monitor_server1
         static_ips: (( static_ips(0) ))
-  - name: monitor_server_z1
-    instances: 2
-    networks:
-      - name: monitor_server1
-        static_ips: ~
-    properties:
-      monitor_server:
-        leader_address: (( jobs.monitor_server_leader_z1.networks.monitor_server1.static_ips.[0] ))
 
 compilation:
   cloud_properties:

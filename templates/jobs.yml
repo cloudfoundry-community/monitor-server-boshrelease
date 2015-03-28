@@ -9,24 +9,13 @@ update:
   serial: false
 
 jobs:
-  - name: monitor_server_leader_z1
-    template: monitor-server
-    instances: 0
-    resource_pool: small_z1
-    networks: (( merge ))
-    persistent_disk: 0
-    properties: {}
   - name: monitor_server_z1
     template: monitor-server
     instances: 0
     resource_pool: small_z1
     networks: (( merge ))
     persistent_disk: 0
-    update:
-      canaries: 10
-    properties:
-      monitor_server:
-        leader_address: (( merge ))
+    properties: {}
 
 networks: (( merge ))
 
