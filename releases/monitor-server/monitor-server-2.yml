@@ -1,0 +1,11 @@
+---
+packages: []
+jobs:
+- name: monitor-server
+  version: ac50c9cee0cde3b1e2b123bf0d827b8e4fc6d34e
+  fingerprint: ac50c9cee0cde3b1e2b123bf0d827b8e4fc6d34e
+  sha1: f1361566c1c2189b790c884775223d8ed1020e65
+commit_hash: 8ccd0ec9
+uncommitted_changes: true
+name: monitor-server
+version: '2'
