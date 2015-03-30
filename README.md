@@ -1,7 +1,9 @@
 BOSH release for monitor-server
 ===============================
 
-Special monit scripts to watch your BOSH VMs and raise alerts.
+Bonus monit scripts to watch your BOSH VMs and raise alerts. Include in any existing BOSH deployment for bonus monitoring!
+
+![pagerduty](http://cl.ly/image/0g2c2m3B0w45/photo.jpg)
 
 Includes
 
