@@ -2,7 +2,7 @@
 name: monitor-server
 packages: []
 templates:
-- touchme: touchme
+  touchme: touchme
 properties:
   monitor_server.ephemeral_disk.alert_percent:
     description: ""
