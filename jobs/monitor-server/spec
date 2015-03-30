@@ -1,5 +1,6 @@
 ---
 name: monitor-server
 packages: []
-templates: {}
+templates:
+- touchme: touchme
 properties: {}
