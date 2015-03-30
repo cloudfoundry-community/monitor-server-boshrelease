@@ -3,4 +3,10 @@ name: monitor-server
 packages: []
 templates:
 - touchme: touchme
-properties: {}
+properties:
+  monitor_server.ephemeral_disk.alert_percent:
+    description: ""
+    default: 80
+  monitor_server.persistent_disk.alert_percent:
+    description: ""
+    default: 80
