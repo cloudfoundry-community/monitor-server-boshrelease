@@ -49,6 +49,12 @@ The jobs with `monitor-server` template included will now generate alerts via BO
 Setup BOSH to send alerts
 -------------------------
 
+The documentation for BOSH shows how to configure your Micro BOSH or BOSH to send notifications to email/SMTP, Pager Duty, Data Dog, etc:
+
+-	https://bosh.io/docs/monitoring.html
+-	https://bosh.io/docs/hm-config.html
+-	https://bosh.io/docs/vm-monit.html
+
 Configuration
 -------------
 
