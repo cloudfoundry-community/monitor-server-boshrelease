@@ -67,7 +67,7 @@ properties:
   monitor_server:
     ephemeral_disk:
       alert_percent: 80
-      persistent_disk:
+    persistent_disk:
       alert_percent: 80
 ```
 
