@@ -39,9 +39,7 @@ See section Configuration for configuration options and the defaults.
 To use this BOSH release, first upload it to your BOSH:
 
 ```
-git clone https://github.com/cloudfoundry-community/monitor-server-boshrelease.git
-cd monitor-server-boshrelease
-bosh upload release releases/monitor-server-2.yml
+bosh upload release https://bosh.io/d/github.com/cloudfoundry-community/monitor-server-boshrelease
 ```
 
 Finally, run `bosh deploy` for your modified, existing BOSH deployment manifest.
